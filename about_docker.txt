@@ -1,0 +1,19 @@
+Virtualization -- Method of hosting multiple computer in local host virtually
+
+Docker is advanced method of virtualization::::
+It is light weigt
+used for contarization
+the conatienr will not have their own kernel they will us os kernal by docker 
+daemon
+
+        Virtualization :: 
+	in virtualization a new layer called hypervisor is created
+
+	this will allow the shell of virtual os to communicate with
+	local host os
+
+	while virtualization the virtual os will have its own kernel
+	and make different partation of memory
+
+
+
