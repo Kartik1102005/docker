@@ -1,0 +1,13 @@
+# These are some command for docker
+
+   1 > docker pull mysql:latest [pull command is used for pulling image from docker hub]
+   
+    2> docker image [show all images in your pc]
+
+    3> docker ps [show all the cotainers]
+  
+    4> docker run -d -e image name   [will create container from image]
+
+    5> docker exec -it <container id>   [use to run conatiner]
+
+    
