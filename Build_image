@@ -1,0 +1,10 @@
+1> first make the code file for your app
+2> now write the docker file
+3> the dockerfile and the code should be in same directory
+4> now type docker build . -t app
+                         |  |
+                         |  |
+                         |  |
+                         |   -t for tag
+                         |
+                         . will tell use all file in that repo <Dockerfile>
