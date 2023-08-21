@@ -1,0 +1,69 @@
+	Volume :
+                 We can say that are volme are like directory which are used for backup
+                 
+                 if a container is stopped or deleted then there will be back up of data available
+
+
+
+
+       We van use volume in different tyoes:
+
+
+       [ 1> assigining volume while creating Dockerfile <images> 
+        
+          [
+
+            
+             FROM ubuntu
+        
+             VOLUME ["name_of_volume"]
+
+
+
+
+
+
+
+
+
+         ]
+
+      2> build image from docker file --->> docker build -t my_vlo .
+
+ 
+      3> now create a container andd run it  ------>> docker run -it --name cont1 my_vlo /bin/bash
+
+      4> type ls
+       
+      5> we can see a folder named name_of_volume will be created
+
+       ]
+
+ 
+       [
+
+           How to attach two different conatiner with single volume
+ 
+                  by doing this we can see changes in both container
+
+
+
+
+
+            1> Create an container
+                                                                                              -->  we will use anotheer image 
+                                                                                              |
+                                                                                              | 
+                docker run -it --name cont2 --privileged=true --volumes-from <containe id> ubuntu /bin/bash
+
+                                                                                  |
+                                                                                  |
+                                                                           <type the container id of cont1>
+
+             2> we can see that there is a folder name name_of_volume
+
+       ]
+
+         
+
+        
