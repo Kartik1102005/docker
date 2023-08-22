@@ -1,3 +1,4 @@
+      
 	Volume :
                  We can say that are volme are like directory which are used for backup
                  
@@ -9,7 +10,7 @@
        We van use volume in different tyoes:
 
 
-       [ 1> assigining volume while creating Dockerfile <images> 
+       ===================================[ 1> assigining volume while creating Dockerfile <images> ====================================
         
           [
 
@@ -40,9 +41,15 @@
        ]
 
  
+
+
+
+
+
+
        [
 
-           How to attach two different conatiner with single volume
+       ===================================    How to attach two different conatiner with single volume===================================
  
                   by doing this we can see changes in both container
 
@@ -66,4 +73,25 @@
 
          
 
-        
+
+
+
+     
+
+  =================================              HOW TO ATTACH VLOME FROM HOST TO CONTAINER================================================
+
+      [
+
+
+
+
+            1> first create a directory in loacal machine which is going to be used for volume <host_backup>
+            2> now copy the path of that directory
+            3> create container 
+                        
+                     docker run -it --name containe3 -v /home/host_backup:/ubuntu_dire --privileged=true <name of image> 
+
+
+
+
+      ]        
